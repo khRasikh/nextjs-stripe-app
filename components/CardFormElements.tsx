@@ -92,7 +92,7 @@ const CardFormElements: FC<{
     const { error } = await stripe!.confirmPayment({
       elements,
       confirmParams: {
-        return_url: "http://localhost:3000/success-payment",
+        return_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success-payment`,
         payment_method_data: {
           billing_details: {
             name: input.cardholderName,

@@ -111,7 +111,7 @@ const CardFormElements: FC<{
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-4 md:grid md:grid-cols-2 md:gap-4">
           <div className="bg-gray-100 px-6 py-6 rounded-md">
             <CustomInputs
               className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
